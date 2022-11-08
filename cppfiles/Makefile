@@ -1,0 +1,95 @@
+# Project: 1D HydroCode
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++
+OBJ      = main.o parameter.o Variable/variable.o Variable/definition.o Class/phyQua.o Function/getRho.o Function/chemicalModule.o Function/boundary.o Function/initial.o Function/getVel.o Function/getEpsilon.o Function/checkRho.o Function/fromxTox.o Function/update.o Function/findPotential.o Function/findPressure.o Function/fileIO.o Function/output.o Function/findDt.o Function/rungeKutta.o Function/spatial.o Function/wenoModule.o Function/flagConflicts.o Function/runTestModel.o Function/eosTable.o Function/findQuantumPotential.o Function/sedov.o
+LINKOBJ  = main.o parameter.o Variable/variable.o Variable/definition.o Class/phyQua.o Function/getRho.o Function/chemicalModule.o Function/boundary.o Function/initial.o Function/getVel.o Function/getEpsilon.o Function/checkRho.o Function/fromxTox.o Function/update.o Function/findPotential.o Function/findPressure.o Function/fileIO.o Function/output.o Function/findDt.o Function/rungeKutta.o Function/spatial.o Function/wenoModule.o Function/flagConflicts.o Function/runTestModel.o Function/eosTable.o Function/findQuantumPotential.o Function/sedov.o
+BIN      = hydro.exe
+CXXFLAGS = $(CXXINCS) -std=c++11 -lpthread -lfftw3
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS) $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+parameter.o: parameter.cpp
+	$(CPP) -c parameter.cpp -o parameter.o $(CXXFLAGS)
+
+Variable/variable.o: Variable/variable.cpp
+	$(CPP) -c Variable/variable.cpp -o Variable/variable.o $(CXXFLAGS)
+
+Variable/definition.o: Variable/definition.cpp
+	$(CPP) -c Variable/definition.cpp -o Variable/definition.o $(CXXFLAGS)
+
+Class/phyQua.o: Class/phyQua.cpp
+	$(CPP) -c Class/phyQua.cpp -o Class/phyQua.o $(CXXFLAGS)
+
+Function/getRho.o: Function/getRho.cpp
+	$(CPP) -c Function/getRho.cpp -o Function/getRho.o $(CXXFLAGS)
+
+Function/chemicalModule.o: Function/chemicalModule.cpp
+	$(CPP) -c Function/chemicalModule.cpp -o Function/chemicalModule.o $(CXXFLAGS)
+
+Function/boundary.o: Function/boundary.cpp
+	$(CPP) -c Function/boundary.cpp -o Function/boundary.o $(CXXFLAGS)
+
+Function/initial.o: Function/initial.cpp
+	$(CPP) -c Function/initial.cpp -o Function/initial.o $(CXXFLAGS)
+
+Function/getVel.o: Function/getVel.cpp
+	$(CPP) -c Function/getVel.cpp -o Function/getVel.o $(CXXFLAGS)
+
+Function/getEpsilon.o: Function/getEpsilon.cpp
+	$(CPP) -c Function/getEpsilon.cpp -o Function/getEpsilon.o $(CXXFLAGS)
+
+Function/checkRho.o: Function/checkRho.cpp
+	$(CPP) -c Function/checkRho.cpp -o Function/checkRho.o $(CXXFLAGS)
+
+Function/fromxTox.o: Function/fromxTox.cpp
+	$(CPP) -c Function/fromxTox.cpp -o Function/fromxTox.o $(CXXFLAGS)
+
+Function/update.o: Function/update.cpp
+	$(CPP) -c Function/update.cpp -o Function/update.o $(CXXFLAGS)
+
+Function/findPotential.o: Function/findPotential.cpp
+	$(CPP) -c Function/findPotential.cpp -o Function/findPotential.o $(CXXFLAGS)
+
+Function/findPressure.o: Function/findPressure.cpp
+	$(CPP) -c Function/findPressure.cpp -o Function/findPressure.o $(CXXFLAGS)
+
+Function/fileIO.o: Function/fileIO.cpp
+	$(CPP) -c Function/fileIO.cpp -o Function/fileIO.o $(CXXFLAGS)
+
+Function/output.o: Function/output.cpp
+	$(CPP) -c Function/output.cpp -o Function/output.o $(CXXFLAGS)
+
+Function/findDt.o: Function/findDt.cpp
+	$(CPP) -c Function/findDt.cpp -o Function/findDt.o $(CXXFLAGS)
+
+Function/rungeKutta.o: Function/rungeKutta.cpp
+	$(CPP) -c Function/rungeKutta.cpp -o Function/rungeKutta.o $(CXXFLAGS)
+
+Function/spatial.o: Function/spatial.cpp
+	$(CPP) -c Function/spatial.cpp -o Function/spatial.o $(CXXFLAGS)
+
+Function/wenoModule.o: Function/wenoModule.cpp
+	$(CPP) -c Function/wenoModule.cpp -o Function/wenoModule.o $(CXXFLAGS)
+
+Function/flagConflicts.o: Function/flagConflicts.cpp
+	$(CPP) -c Function/flagConflicts.cpp -o Function/flagConflicts.o $(CXXFLAGS)
+
+Function/runTestModel.o: Function/runTestModel.cpp
+	$(CPP) -c Function/runTestModel.cpp -o Function/runTestModel.o $(CXXFLAGS)
+
+Function/eosTable.o: Function/eosTable.cpp
+	$(CPP) -c Function/eosTable.cpp -o Function/eosTable.o $(CXXFLAGS)
+
+Function/findQuantumPotential.o: Function/findQuantumPotential.cpp
+	$(CPP) -c Function/findQuantumPotential.cpp -o Function/findQuantumPotential.o $(CXXFLAGS)
+
+Function/sedov.o: Function/sedov.cpp
+	$(CPP) -c Function/sedov.cpp -o Function/sedov.o $(CXXFLAGS)
+
+clean:
+	rm -rf *.o Class/*.o Function/*.o Variable/*.o
