@@ -191,7 +191,7 @@ double temp2A = 1.0e-1;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 //The maximum number of iteration for Rungekutta method
-int totalTimeStep = 10000000;
+int totalTimeStep = 1;
 
 //Accuracy of the initial date if it is generated
 //(Do NOT change this unless you know what you are doing)
