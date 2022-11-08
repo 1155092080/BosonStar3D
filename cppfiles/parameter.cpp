@@ -66,7 +66,7 @@ int outputEvery = 10000;
 bool wGravityI = true;
 
 //The presence of dark matter component
-bool dmFlag = false;
+bool dmFlag = true;
 
 //Whether dark matter component are movable
 bool runDMFlag = false;
@@ -230,7 +230,7 @@ bool bosonDMFlag = false;
 //Use rel. Boson EOS for DM
 bool bosonDMEOS = false;
 //Use 4-th order solver for Boson DM
-bool qpDMFlag = false;
+bool qpDMFlag = true;
 
 //Properties of Boson
 double scattering = 5e-074;
