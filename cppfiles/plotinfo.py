@@ -13,3 +13,4 @@ df = pd.merge(dfDM, dfNM, on='step')
 print(df)
 
 df.plot(x='step', y=['rhoDM','rhoNM'],logy=True)
+plt.show()
