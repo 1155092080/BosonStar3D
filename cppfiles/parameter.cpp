@@ -97,7 +97,7 @@ bool xisotranFlag = false;
 */
 
 //Initial central density of dark matter component, do not set to zero
-double rho1C = 0.005 * 1.619e-9;
+double rho1C = 1.0;//0.005 * 1.619e-9;
 //double rho1C = 0.0;
 
 //Initial central density of normal matter component, do not set to zero
@@ -191,7 +191,7 @@ double temp2A = 1.0e-1;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 //The maximum number of iteration for Rungekutta method
-int totalTimeStep = 1;
+int totalTimeStep = 0;
 
 //Accuracy of the initial date if it is generated
 //(Do NOT change this unless you know what you are doing)
@@ -235,5 +235,5 @@ bool qpDMFlag = true;
 //Properties of Boson
 double scattering = 5e-074;
 double mBoson = 2e-077;
-double mu = 0.5;
+double mu = 3;//0.5;
 double psi;
