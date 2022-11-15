@@ -66,7 +66,7 @@ int outputEvery = 10000;
 bool wGravityI = true;
 
 //The presence of dark matter component
-bool dmFlag = true;
+bool dmFlag = false;
 
 //Whether dark matter component are movable
 bool runDMFlag = false;
@@ -79,7 +79,7 @@ bool aprEOS = false;
 bool newAPREOS = false;
 
 //! 0 = use newtonian polytropic EOS For NM !
-bool relEOS = false;
+bool relEOS = true;
 
 //...(Skip it please)
 bool levelSetFlagDM = false;
@@ -219,18 +219,18 @@ Test Boson Feature
 bool TOVFlag = false;
 
 //Use polytropic Boson EOS for NM
-bool bosonFlag = true;
+bool bosonFlag = false;
 //Use rel. Boson EOS for NM
 bool bosonEOS = false;
 //Use 4-th order solver for Boson NM
-bool qpFlag = true;
+bool qpFlag = false;
 
 //Use polytropic Boson EOS for DM
 bool bosonDMFlag = false;
 //Use rel. Boson EOS for DM
 bool bosonDMEOS = false;
 //Use 4-th order solver for Boson DM
-bool qpDMFlag = true;
+bool qpDMFlag = false;
 
 //Properties of Boson
 double scattering = 5e-074;
