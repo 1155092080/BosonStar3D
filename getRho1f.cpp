@@ -1,9 +1,18 @@
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include <complex>
+#include "../parameter.h"
 using namespace std;
+
+//double sum(vecotr<double>);
+//void azBar(double *xMass, double &aBar, double &zBar);
+
 
 //The number of hydrostatic equation and the improved accuracy
 int noOfEqIni;
 int more = pow(10, iniAcc);
-
+int totalIon = 1;
 /*
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!                             
  ! This subroutine is obtained from Timmes' nuclear network !
