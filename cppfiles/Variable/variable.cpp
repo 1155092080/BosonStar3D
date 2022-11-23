@@ -381,15 +381,15 @@ void buildVariable(){
 	
 	//set the number of nucleons in the element
 	aion[cc12] = 12.0;
-	aion[cni56] = 56.0;
+	aion[cni56] = 12.0;//56.0;
 	
 	//set the number of protons in the element
 	zion[cc12] = 6.0;
-	zion[cni56] = 28.0;
+	zion[cni56] = 6.0;//28.0;
 	
 	//set the binding energy of (MeV) the element
 	bion[cc12] = 92.16294;
-	bion[cni56] = 484.00300;
+	bion[cni56] = 92.16294;// 484.00300;
 	
 	for(int i=0;i<totalIon;i++){
 		//set the number of neutrons and mass
