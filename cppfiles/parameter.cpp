@@ -101,7 +101,7 @@ double rho1C = 1.0;//0.005 * 1.619e-9;
 //double rho1C = 0.0;
 
 //Initial central density of normal matter component, do not set to zero
-double rho2C = 1e6 * 1.619e-18;
+double rho2C = 2*1e10 * 1.619e-18;
 //double rho2C = 0.0046 * 1.619e-9;
 
 //Density of the dark matter at the atmosphere, do not set to zero
