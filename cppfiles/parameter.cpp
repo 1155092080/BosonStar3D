@@ -72,7 +72,7 @@ bool dmFlag = false;
 bool runDMFlag = false;
 
 //! 1 = use Fermi Gas EOS For NM !
-bool fermiEOS = false;
+bool fermiEOS = true;
 
 ////Use APR for NM
 bool aprEOS = false;
