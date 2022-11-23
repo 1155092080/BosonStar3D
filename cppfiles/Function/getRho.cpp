@@ -164,11 +164,12 @@ void getRhoEOSRToP(double &iniP, double iniRho, int type){
 		if(fermiEOS){
 			double dlfmmo = pow(6.0*PI*PI*hBar*hBar*hBar*iniRho*ye2/(gs2*mb2*me2*me2*me2), 1.0/3.0);
 			
-			if(dlfmmo <= 6.0e-2){
-				iniP = (gs2*me2*me2*me2*me2)/(30.0*PI*PI*hBar*hBar*hBar) * (pow(dlfmmo, 5.0) - 5.0*pow(dlfmmo, 7.0)/14.0 + 5.0*pow(dlfmmo, 9.0)/24.0);				
-			}else{
-				iniP = (gs2*me2*me2*me2*me2)/(16.0*PI*PI*hBar*hBar*hBar) * (dlfmmo*sqrt(1.0+dlfmmo*dlfmmo) * (2.0*dlfmmo*dlfmmo/3.0 - 1.0) + log(dlfmmo + sqrt(1.0+dlfmmo*dlfmmo)));
-			}
+			// if(dlfmmo <= 6.0e-2){
+			// 	iniP = (gs2*me2*me2*me2*me2)/(30.0*PI*PI*hBar*hBar*hBar) * (pow(dlfmmo, 5.0) - 5.0*pow(dlfmmo, 7.0)/14.0 + 5.0*pow(dlfmmo, 9.0)/24.0);				
+			// }else{
+			// 	iniP = (gs2*me2*me2*me2*me2)/(16.0*PI*PI*hBar*hBar*hBar) * (dlfmmo*sqrt(1.0+dlfmmo*dlfmmo) * (2.0*dlfmmo*dlfmmo/3.0 - 1.0) + log(dlfmmo + sqrt(1.0+dlfmmo*dlfmmo)));
+			// }
+			iniP = (gs2*me2*me2*me2*me2)/(16.0*PI*PI*hBar*hBar*hBar) * (dlfmmo*sqrt(1.0+dlfmmo*dlfmmo) * (2.0*dlfmmo*dlfmmo/3.0 - 1.0) + log(dlfmmo + sqrt(1.0+dlfmmo*dlfmmo)));
 			
 		}else if(bosonEOS){
 			double K  = 8.0*PI*scattering*hBar*hBar/4.0/mBoson/mBoson/mBoson;
